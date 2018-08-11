@@ -128,7 +128,7 @@ class vdoc{
 	 * @param  string     $cnpj
 	 * @return bool             true para CNPJ correto
 	 */
-	protected function valida_cnpj () {
+	protected function validarCNPJ () {
 		// O valor original
 		$cnpj_original = $this->valor;
 		// Captura os primeiros 12 números do CNPJ
@@ -160,7 +160,7 @@ class vdoc{
 		// Valida CNPJ
 		elseif ( $this->validardoc() === 'CNPJ' ) {
 			// Retorna true para CNPJ válido
-			return $this->valida_cnpj();
+			return $this->validarCNPJ();
 		} 
 		// Não retorna nada
 		else {
@@ -191,7 +191,7 @@ class vdoc{
 		// Valida CNPJ
 		elseif ( $this->validardoc() === 'CNPJ' ) {
 			// Verifica se o CPF é válido
-			if ( $this->valida_cnpj() ) {
+			if ( $this->validarCNPJ() ) {
 				// Formata o CNPJ ##.###.###/####-##
 				$docformat  = substr( $this->valor,  0,  2 ) . '.';
 				$docformat .= substr( $this->valor,  2,  3 ) . '.';
