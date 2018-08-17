@@ -1,4 +1,4 @@
-Sobre O vDOC [1.5-Beta.1]
+Sobre O vDOC
 ===============
 
  O **vDOC** é uma simples classe que valida (e agora deixa no formato padrão) que facilita muitos desenvolvedores que ultilizar em cadastro a opção de preenchimento de documentos (In Especial CPF/CNPJ). 
